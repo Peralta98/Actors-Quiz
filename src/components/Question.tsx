@@ -8,7 +8,7 @@ interface QuestionProps {
     options: string[];
     correct: string;
   };
-  onAnswer: (isCorrect: boolean) => void;
+  onAnswer: (isCorrect: boolean, selectedAnswer: string) => void;
   currentQuestionNumber: number;
   totalQuestions: number;
 }
@@ -27,10 +27,10 @@ const Question: React.FC<QuestionProps> = ({
     setShowResult(true);
     const isCorrect = option === question.correct;
     setTimeout(() => {
-      onAnswer(isCorrect);
+      onAnswer(isCorrect, option);
       setSelectedAnswer(null);
       setShowResult(false);
-    }, 2000); // Aumentado para 2 segundos para dar tempo de ver a resposta correta
+    }, 2000); // Increased to 2 seconds to give time to see the correct answer
   };
 
   const getButtonClass = (option: string) => {
@@ -43,7 +43,7 @@ const Question: React.FC<QuestionProps> = ({
   return (
     <div className="question-container">
       <div className="question-number">
-        Questão {currentQuestionNumber}/{totalQuestions}
+        Question {currentQuestionNumber}/{totalQuestions}
       </div>
       <div className="image-container">
         <img src={question.image} alt="Actor" className="actor-image" />

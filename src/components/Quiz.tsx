@@ -11,16 +11,23 @@ interface Actor {
   image: string;
 }
 
+interface AnswerRecord {
+  question: Actor;
+  userAnswer: string;
+  isCorrect: boolean;
+}
+
 const Quiz = () => {
   const [questions, setQuestions] = useState<Actor[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
+  const [answerRecords, setAnswerRecords] = useState<AnswerRecord[]>([]);
 
   const loadQuestions = () => {
     const shuffled = [...actorsData.actors].sort(() => 0.5 - Math.random());
-    setQuestions(shuffled.slice(0, 20));
+    setQuestions(shuffled.slice(0, 3));
   };
 
   useEffect(() => {
@@ -36,10 +43,18 @@ const Quiz = () => {
     setCurrentQuestionIndex(0);
   };
 
-  const handleAnswer = (isCorrect: boolean) => {
+  const handleAnswer = (isCorrect: boolean, userAnswer: string) => {
     if (isCorrect) {
       setScore(score + 1);
     }
+    setAnswerRecords([
+      ...answerRecords,
+      {
+        question: questions[currentQuestionIndex],
+        userAnswer,
+        isCorrect,
+      },
+    ]);
     const nextQuestionIndex = currentQuestionIndex + 1;
     if (nextQuestionIndex < questions.length) {
       setCurrentQuestionIndex(nextQuestionIndex);
@@ -54,13 +69,18 @@ const Quiz = () => {
 
   if (showResult) {
     return (
-      <Result score={score} total={questions.length} onRestart={handleStart} />
+      <Result
+        score={score}
+        total={questions.length}
+        onRestart={handleStart}
+        answerRecords={answerRecords}
+      />
     );
   }
 
   const currentQuestion = questions[currentQuestionIndex];
   if (!currentQuestion) {
-    return <div>Carregando...</div>;
+    return <div>Loading...</div>;
   }
 
   const sameGenderActors = actorsData.actors.filter(
@@ -86,7 +106,9 @@ const Quiz = () => {
         options: shuffledOptions,
         correct: currentQuestion.name,
       }}
-      onAnswer={handleAnswer}
+      onAnswer={(isCorrect, selectedAnswer) =>
+        handleAnswer(isCorrect, selectedAnswer)
+      }
       currentQuestionNumber={currentQuestionIndex + 1}
       totalQuestions={questions.length}
     />

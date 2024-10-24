@@ -107,18 +107,43 @@ body {
 }
 
 .result-container {
-  height: 1.5rem;
-  font-weight: bold;
-  font-size: 1.25rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-.correct {
-  color: #10b981;
+.incorrect-answers {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
 }
 
-.incorrect {
-  color: #ef4444;
+.incorrect-answer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.actor-image-small {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.answer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.answer-text p {
+  margin: 0.25rem 0;
 }
 
 .result-icon {
