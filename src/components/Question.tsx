@@ -30,14 +30,14 @@ const Question: React.FC<QuestionProps> = ({
       onAnswer(isCorrect);
       setSelectedAnswer(null);
       setShowResult(false);
-    }, 1500);
+    }, 2000); // Aumentado para 2 segundos para dar tempo de ver a resposta correta
   };
 
   const getButtonClass = (option: string) => {
-    if (!showResult || selectedAnswer !== option) return "option-button";
-    return selectedAnswer === question.correct
-      ? "option-button correct"
-      : "option-button incorrect";
+    if (!showResult) return "option-button";
+    if (option === question.correct) return "option-button correct";
+    if (option === selectedAnswer) return "option-button incorrect";
+    return "option-button";
   };
 
   return (
