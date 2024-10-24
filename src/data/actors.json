@@ -1,0 +1,557 @@
+{
+  "actors": [
+    {
+      "id": 31,
+      "name": "Tom Hanks",
+      "gender": "male",
+      "image": "/images/31.webp"
+    },
+    {
+      "id": 5064,
+      "name": "Meryl Streep",
+      "gender": "female",
+      "image": "/images/5064.webp"
+    },
+    {
+      "id": 5292,
+      "name": "Denzel Washington",
+      "gender": "male",
+      "image": "/images/5292.webp"
+    },
+    {
+      "id": 54693,
+      "name": "Emma Stone",
+      "gender": "female",
+      "image": "/images/54693.webp"
+    },
+    {
+      "id": 6193,
+      "name": "Leonardo DiCaprio",
+      "gender": "male",
+      "image": "/images/6193.webp"
+    },
+    {
+      "id": 74568,
+      "name": "Chris Hemsworth",
+      "gender": "male",
+      "image": "/images/74568.webp"
+    },
+    {
+      "id": 1245,
+      "name": "Scarlett Johansson",
+      "gender": "female",
+      "image": "/images/1245.webp"
+    },
+    {
+      "id": 287,
+      "name": "Brad Pitt",
+      "gender": "male",
+      "image": "/images/287.webp"
+    },
+    {
+      "id": 1813,
+      "name": "Anne Hathaway",
+      "gender": "female",
+      "image": "/images/1813.webp"
+    },
+    {
+      "id": 500,
+      "name": "Tom Cruise",
+      "gender": "male",
+      "image": "/images/500.webp"
+    },
+    {
+      "id": 109513,
+      "name": "Alexandra Daddario",
+      "gender": "female",
+      "image": "/images/109513.webp"
+    },
+    {
+      "id": 3223,
+      "name": "Robert Downey Jr.",
+      "gender": "male",
+      "image": "/images/3223.webp"
+    },
+    {
+      "id": 1283,
+      "name": "Helena Bonham Carter",
+      "gender": "female",
+      "image": "/images/1283.webp"
+    },
+    {
+      "id": 2176,
+      "name": "Tommy Lee Jones",
+      "gender": "male",
+      "image": "/images/2176.webp"
+    },
+    {
+      "id": 1734,
+      "name": "Annette O'Toole",
+      "gender": "female",
+      "image": "/images/1734.webp"
+    },
+    {
+      "id": 2888,
+      "name": "Will Smith",
+      "gender": "male",
+      "image": "/images/2888.webp"
+    },
+    {
+      "id": 1204,
+      "name": "Julia Roberts",
+      "gender": "female",
+      "image": "/images/1204.webp"
+    },
+    {
+      "id": 192,
+      "name": "Morgan Freeman",
+      "gender": "male",
+      "image": "/images/192.webp"
+    },
+    {
+      "id": 1223786,
+      "name": "Emilia Clarke",
+      "gender": "female",
+      "image": "/images/1223786.webp"
+    },
+    {
+      "id": 73457,
+      "name": "Chris Pratt",
+      "gender": "male",
+      "image": "/images/73457.webp"
+    },
+    {
+      "id": 1231,
+      "name": "Julianne Moore",
+      "gender": "female",
+      "image": "/images/1231.webp"
+    },
+    {
+      "id": 3894,
+      "name": "Christian Bale",
+      "gender": "male",
+      "image": "/images/3894.webp"
+    },
+    {
+      "id": 1397778,
+      "name": "Anya Taylor-Joy",
+      "gender": "female",
+      "image": "/images/1397778.webp"
+    },
+    {
+      "id": 224513,
+      "name": "Ana de Armas",
+      "gender": "female",
+      "image": "/images/224513.webp"
+    },
+    {
+      "id": 17605,
+      "name": "Idris Elba",
+      "gender": "male",
+      "image": "/images/17605.webp"
+    },
+    {
+      "id": 1920,
+      "name": "Winona Ryder",
+      "gender": "female",
+      "image": "/images/1920.webp"
+    },
+    {
+      "id": 1136406,
+      "name": "Tom Holland",
+      "gender": "male",
+      "image": "/images/1136406.webp"
+    },
+    {
+      "id": 234352,
+      "name": "Margot Robbie",
+      "gender": "female",
+      "image": "/images/234352.webp"
+    },
+    {
+      "id": 1892,
+      "name": "Matt Damon",
+      "gender": "male",
+      "image": "/images/1892.webp"
+    },
+    {
+      "id": 1979,
+      "name": "Kevin Spacey",
+      "gender": "male",
+      "image": "/images/1979.webp"
+    },
+    {
+      "id": 62,
+      "name": "Bruce Willis",
+      "gender": "male",
+      "image": "/images/62.webp"
+    },
+    {
+      "id": 1903,
+      "name": "Alan Arkin",
+      "gender": "male",
+      "image": "/images/1903.webp"
+    },
+    {
+      "id": 6968,
+      "name": "Hugh Jackman",
+      "gender": "male",
+      "image": "/images/6968.webp"
+    },
+    {
+      "id": 1010,
+      "name": "Michael Badalucco",
+      "gender": "male",
+      "image": "/images/1010.webp"
+    },
+    {
+      "id": 134,
+      "name": "Jamie Foxx",
+      "gender": "male",
+      "image": "/images/134.webp"
+    },
+    {
+      "id": 1100,
+      "name": "Arnold Schwarzenegger",
+      "gender": "male",
+      "image": "/images/1100.webp"
+    },
+    {
+      "id": 2037,
+      "name": "Cillian Murphy",
+      "gender": "male",
+      "image": "/images/2037.webp"
+    },
+    {
+      "id": 1293,
+      "name": "Franziska Troegner",
+      "gender": "female",
+      "image": "/images/1293.webp"
+    },
+    {
+      "id": 2963,
+      "name": "Nicolas Cage",
+      "gender": "male",
+      "image": "/images/2963.webp"
+    },
+    {
+      "id": 1233,
+      "name": "Philip Seymour Hoffman",
+      "gender": "male",
+      "image": "/images/1233.webp"
+    },
+    {
+      "id": 2524,
+      "name": "Tom Hardy",
+      "gender": "male",
+      "image": "/images/2524.webp"
+    },
+    {
+      "id": 3896,
+      "name": "Liam Neeson",
+      "gender": "male",
+      "image": "/images/3896.webp"
+    },
+    {
+      "id": 4587,
+      "name": "Halle Berry",
+      "gender": "female",
+      "image": "/images/4587.webp"
+    },
+    {
+      "id": 115440,
+      "name": "Sydney Sweeney",
+      "gender": "female",
+      "image": "/images/115440.webp"
+    },
+    {
+      "id": 974169,
+      "name": "Jenna Ortega",
+      "gender": "female",
+      "image": "/images/974169.webp"
+    },
+    {
+      "id": 10859,
+      "name": "Ryan Reynolds",
+      "gender": "male",
+      "image": "/images/10859.webp"
+    },
+    {
+      "id": 84223,
+      "name": "Anna Kendrick",
+      "gender": "female",
+      "image": "/images/84223.webp"
+    },
+    {
+      "id": 6384,
+      "name": "Keanu Reeves",
+      "gender": "male",
+      "image": "/images/6384.webp"
+    },
+    {
+      "id": 2232,
+      "name": "Michael Keaton",
+      "gender": "male",
+      "image": "/images/2232.webp"
+    },
+    {
+      "id": 11701,
+      "name": "Angelina Jolie",
+      "gender": "female",
+      "image": "/images/11701.webp"
+    },
+    {
+      "id": 10990,
+      "name": "Emma Watson",
+      "gender": "female",
+      "image": "/images/10990.webp"
+    },
+    {
+      "id": 18897,
+      "name": "Jackie Chan",
+      "gender": "male",
+      "image": "/images/18897.webp"
+    },
+    {
+      "id": 16483,
+      "name": "Sylvester Stallone",
+      "gender": "male",
+      "image": "/images/16483.webp"
+    },
+    {
+      "id": 10205,
+      "name": "Sigourney Weaver",
+      "gender": "female",
+      "image": "/images/10205.webp"
+    },
+    {
+      "id": 1817,
+      "name": "Linda Cardellini",
+      "gender": "female",
+      "image": "/images/1817.webp"
+    },
+    {
+      "id": 6614,
+      "name": "Cole Hauser",
+      "gender": "male",
+      "image": "/images/6614.webp"
+    },
+    {
+      "id": 12835,
+      "name": "Vin Diesel",
+      "gender": "male",
+      "image": "/images/12835.webp"
+    },
+    {
+      "id": 54882,
+      "name": "Morena Baccarin",
+      "gender": "female",
+      "image": "/images/54882.webp"
+    },
+    {
+      "id": 240724,
+      "name": "Naomi Scott",
+      "gender": "female",
+      "image": "/images/240724.webp"
+    },
+    {
+      "id": 73968,
+      "name": "Henry Cavill",
+      "gender": "male",
+      "image": "/images/73968.webp"
+    },
+    {
+      "id": 204392,
+      "name": "Cristin Milioti",
+      "gender": "female",
+      "image": "/images/204392.webp"
+    },
+    {
+      "id": 1253360,
+      "name": "Pedro Pascal",
+      "gender": "male",
+      "image": "/images/1253360.webp"
+    },
+    {
+      "id": 1152083,
+      "name": "Sabrina Carpenter",
+      "gender": "female",
+      "image": "/images/1152083.webp"
+    },
+    {
+      "id": 1190668,
+      "name": "Timothée Chalamet",
+      "gender": "male",
+      "image": "/images/1190668.webp"
+    },
+    {
+      "id": 550843,
+      "name": "Elizabeth Olsen",
+      "gender": "female",
+      "image": "/images/550843.webp"
+    },
+    {
+      "id": 880,
+      "name": "Ben Affleck",
+      "gender": "male",
+      "image": "/images/880.webp"
+    },
+    {
+      "id": 71070,
+      "name": "Amanda Seyfried",
+      "gender": "female",
+      "image": "/images/71070.webp"
+    },
+    {
+      "id": 25837,
+      "name": "Elisha Cuthbert",
+      "gender": "female",
+      "image": "/images/25837.webp"
+    },
+    {
+      "id": 9780,
+      "name": "Angela Bassett",
+      "gender": "female",
+      "image": "/images/9780.webp"
+    },
+    {
+      "id": 117642,
+      "name": "Jason Momoa",
+      "gender": "male",
+      "image": "/images/117642.webp"
+    },
+    {
+      "id": 19537,
+      "name": "Megan Fox",
+      "gender": "female",
+      "image": "/images/19537.webp"
+    },
+    {
+      "id": 125025,
+      "name": "Joey King",
+      "gender": "female",
+      "image": "/images/125025.webp"
+    },
+    {
+      "id": 9273,
+      "name": "Amy Adams",
+      "gender": "female",
+      "image": "/images/9273.webp"
+    },
+    {
+      "id": 15111,
+      "name": "Jean-Claude Van Damme",
+      "gender": "male",
+      "image": "/images/15111.webp"
+    },
+    {
+      "id": 4724,
+      "name": "Kevin Bacon",
+      "gender": "male",
+      "image": "/images/4724.webp"
+    },
+    {
+      "id": 19211,
+      "name": "Ian Somerhalder",
+      "gender": "male",
+      "image": "/images/19211.webp"
+    },
+    {
+      "id": 1356210,
+      "name": "Millie Bobby Brown",
+      "gender": "female",
+      "image": "/images/1356210.webp"
+    },
+    {
+      "id": 52852,
+      "name": "Kat Dennings",
+      "gender": "female",
+      "image": "/images/52852.webp"
+    },
+    {
+      "id": 119592,
+      "name": "Aubrey Plaza",
+      "gender": "female",
+      "image": "/images/119592.webp"
+    },
+    {
+      "id": 38673,
+      "name": "Channing Tatum",
+      "gender": "male",
+      "image": "/images/38673.webp"
+    },
+    {
+      "id": 56731,
+      "name": "Jessica Alba",
+      "gender": "female",
+      "image": "/images/56731.webp"
+    },
+    {
+      "id": 72129,
+      "name": "Jennifer Lawrence",
+      "gender": "female",
+      "image": "/images/72129.webp"
+    },
+    {
+      "id": 30614,
+      "name": "Ryan Gosling",
+      "gender": "male",
+      "image": "/images/30614.webp"
+    },
+    {
+      "id": 3,
+      "name": "Harrison Ford",
+      "gender": "male",
+      "image": "/images/3.webp"
+    },
+    {
+      "id": 13240,
+      "name": "Mark Wahlberg",
+      "gender": "male",
+      "image": "/images/13240.webp"
+    },
+    {
+      "id": 1254435,
+      "name": "Peyton List",
+      "gender": "female",
+      "image": "/images/1254435.webp"
+    },
+    {
+      "id": 1062,
+      "name": "Christopher Lloyd",
+      "gender": "male",
+      "image": "/images/1062.webp"
+    },
+    {
+      "id": 17288,
+      "name": "Michael Fassbender",
+      "gender": "male",
+      "image": "/images/17288.webp"
+    },
+    {
+      "id": 56734,
+      "name": "Chloë Grace Moretz",
+      "gender": "female",
+      "image": "/images/56734.webp"
+    },
+    {
+      "id": 56446,
+      "name": "John Cena",
+      "gender": "male",
+      "image": "/images/56446.webp"
+    },
+    {
+      "id": 18918,
+      "name": "Dwayne Johnson",
+      "gender": "male",
+      "image": "/images/18918.webp"
+    },
+    {
+      "id": 2227,
+      "name": "Nicole Kidman",
+      "gender": "female",
+      "image": "/images/2227.webp"
+    }
+  
+  ]
+}
