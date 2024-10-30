@@ -17,6 +17,8 @@ interface AnswerRecord {
   isCorrect: boolean;
 }
 
+const POINTS_PER_CORRECT_ANSWER = 100;
+
 const Quiz = () => {
   const [questions, setQuestions] = useState<Actor[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -24,6 +26,14 @@ const Quiz = () => {
   const [showResult, setShowResult] = useState(false);
   const [gameStarted, setGameStarted] = useState(false);
   const [answerRecords, setAnswerRecords] = useState<AnswerRecord[]>([]);
+  const [scores, setScores] = useState<number[]>(() => {
+    const savedScores = localStorage.getItem("quizScores");
+    return savedScores ? JSON.parse(savedScores) : [];
+  });
+  const [bestScore, setBestScore] = useState<number>(() => {
+    const savedBestScore = localStorage.getItem("quizBestScore");
+    return savedBestScore ? parseInt(savedBestScore) : 0;
+  });
 
   const loadQuestions = () => {
     const shuffled = [...actorsData.actors].sort(() => 0.5 - Math.random());
@@ -43,10 +53,22 @@ const Quiz = () => {
     setCurrentQuestionIndex(0);
   };
 
+  const updateScores = (newScore: number) => {
+    const updatedScores = [...scores, newScore];
+    setScores(updatedScores);
+    localStorage.setItem("quizScores", JSON.stringify(updatedScores));
+
+    if (newScore > bestScore) {
+      setBestScore(newScore);
+      localStorage.setItem("quizBestScore", newScore.toString());
+    }
+  };
+
   const handleAnswer = (isCorrect: boolean, userAnswer: string) => {
     if (isCorrect) {
-      setScore(score + 1);
+      setScore(score + POINTS_PER_CORRECT_ANSWER);
     }
+
     setAnswerRecords([
       ...answerRecords,
       {
@@ -55,16 +77,33 @@ const Quiz = () => {
         isCorrect,
       },
     ]);
+
     const nextQuestionIndex = currentQuestionIndex + 1;
     if (nextQuestionIndex < questions.length) {
       setCurrentQuestionIndex(nextQuestionIndex);
     } else {
+      const finalScore = score + (isCorrect ? POINTS_PER_CORRECT_ANSWER : 0);
+      updateScores(finalScore);
       setShowResult(true);
     }
   };
 
+  const handleHome = () => {
+    setGameStarted(false);
+    setShowResult(false);
+    setScore(0);
+    setCurrentQuestionIndex(0);
+    setAnswerRecords([]);
+  };
+
   if (!gameStarted) {
-    return <StartScreen onStart={handleStart} />;
+    return (
+      <StartScreen
+        onStart={handleStart}
+        scores={scores}
+        bestScore={bestScore}
+      />
+    );
   }
 
   if (showResult) {
@@ -74,6 +113,8 @@ const Quiz = () => {
         total={questions.length}
         onRestart={handleStart}
         answerRecords={answerRecords}
+        bestScore={bestScore}
+        onHome={handleHome}
       />
     );
   }
